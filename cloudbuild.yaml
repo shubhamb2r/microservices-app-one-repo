@@ -1,6 +1,6 @@
 steps:
   - name: ubuntu
-    entrypoint: pwd && ls -al
+    dir: microservices-app-one/
     
   - name: maven:3.6.0-jdk-11-slim
     entrypoint: mvn
