@@ -1,11 +1,9 @@
-steps:
-  - name: ubuntu
-    dir: microservices-app-one/
-    
+steps:  
   - name: maven:3.6.0-jdk-11-slim
     entrypoint: mvn
     args: ['--version']
     
   - name: maven:3.6.0-jdk-11-slim
+    dir: microservices-app-one/
     entrypoint: mvn
-    args: ['package','-Dmaven.test.skip=true']
+    args: ['clean' 'package','-Dmaven.test.skip=true']
