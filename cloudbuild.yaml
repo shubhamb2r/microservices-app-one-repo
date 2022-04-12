@@ -1,8 +1,8 @@
 steps:
-  - name: checkPath
+  - name: ubuntu
     entrypoint: pwd
     
-  - name: toPom
+  - name: ubuntu
     entrypoint: cd
     args: ['/microservices-app-one']
     
